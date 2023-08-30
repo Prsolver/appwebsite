@@ -1,0 +1,233 @@
+/* Reset some default styles for consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* ... previous styles ... */
+
+/* Apply background image to the body */
+body {
+    background-image: url('background-image.jpg'); /* Replace with your image source */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make sure the body fills the viewport height */
+    margin: 0; 
+}
+.white-background {
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-color: #f5f5f5;
+    flex-grow: 1; /* Allow the content to grow and push the footer to the bottom */
+    padding: 20px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #0074c2;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #f5f5f5;
+}
+
+/* Header styles */
+header {
+    background-color: #0c6aa8;
+    color: rgb(221, 218, 218);
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: "Your Desired Font", sans-serif;
+    margin-right: 500px;
+    margin-top: -90px;
+
+}
+p{
+    font-size: 1.5rem;
+    font-family: "Your Desired Font", sans-serif;
+    margin-right: 200px;
+     
+}
+.tedu-text {
+    color: rgb(179, 20, 20);
+    /* Additional styles if needed */
+}
+
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3367d6;
+}
+
+.btn-home {
+    background-color: #33b249;
+}
+
+.btn-download {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: rgb(7, 1, 1);
+    cursor: pointer;
+    background-color: #ad0f0f; /* Blue color for the download buttons */
+    transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #3367d6; /* Darker blue on hover */
+}
+
+.btn-contact {
+    background-color: #fbbc05;
+}
+
+.btn-about {
+    background-color: #34a853;
+}
+nav {
+    background: linear-gradient(to right, #b856b3, #1d1188); /* Gradient from blue to green */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Download links styles */
+.download-links {
+    text-align: center;
+    margin-top: 30px;
+}
+.centered-content {
+    /* ... previous styles ... */
+    flex-grow: 1; /* Allow the centered content to grow and push the footer to the bottom */
+}
+/* Footer styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right, #771772, #1d1188); /* Gradient from purple to blue */
+    color: #f0f0f0;
+    font-size: 12px;
+    padding: 20px;
+    text-align: center;
+  
+}
+
+  
+
+/* Button container styles */
+.buttons-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 281px); /* Adjust as needed */
+}
+
+.button-container {
+    text-align: center;
+}
+/* Your existing styles */
+
+/* Add this rule to adjust the logo size */
+.logo-image {
+    max-width: 150px; /* Adjust the value as needed */
+    height: 150px;
+    display: flex;
+    margin:auto /* Center the logo */
+}
+
+.logo {
+    max-width: 50px;
+    max-height: 100px;
+    margin-left: 100px;
+    
+}
+
+.button-30 {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 68px;
+    width: 170px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+  
+  .button-30:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  .button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .button-30:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+
